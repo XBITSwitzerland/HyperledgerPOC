@@ -9,6 +9,8 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/home/Home';
 import Lernende from './components/pages/lernende/Lernende';
 import Berufe from './components/pages/beruf/Berufe';
+import Einsatzstellen from './components/pages/einsatzstelle/Einsatzstellen';
+import Lehrgange from './components/pages/lehrgange/Lehrgange';
 
 class App extends Component {
   state = {
@@ -23,35 +25,47 @@ class App extends Component {
         lehrgang: {
           id: "xxx",
           name: "xxx",
-          beruf: "xxx",
-          Einsatzstellen: [{
-            id: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          einsatzstellen: [{
+            id: "1",
             langBezeichnung: "xxx",
             kurzBezeichnung: "xxx",
             stellenBeschreibung: "xxx",
             bemerkung: "xxx",
-            beruf: "xxx",
+            beruf: {
+              id: "1",
+              berufKurz: "INF",
+              berufLang: "Informatiker"
+            },
             lehrjahr: "xxx",
-            Ausbildner: {
-              id: "xxx",
-              vorname: "xxx",
-              nachname: "xxx",
-              geburtstag: "xxx"
+            ausbildner: {
+              id: "1",
+              vorname: "Tobias",
+              nachname: "Peter",
+              geburtstag: "25.06.1959"
             }
           },
           {
-            id: "xxx",
+            id: "2",
             langBezeichnung: "xxx",
             kurzBezeichnung: "xxx",
             stellenBeschreibung: "xxx",
             bemerkung: "xxx",
-            beruf: "xxx",
+            beruf: {
+              id: "1",
+              berufKurz: "INF",
+              berufLang: "Informatiker"
+            },
             lehrjahr: "xxx",
-            Ausbildner: {
-              id: "xxx",
-              vorname: "xxx",
-              nachname: "xxx",
-              geburtstag: "xxx"
+            ausbildner: {
+              id: "1",
+              vorname: "Tobias",
+              nachname: "Peter",
+              geburtstag: "25.06.1959"
             }}]
           }
       },
@@ -63,40 +77,60 @@ class App extends Component {
         lehrbeginn: 'xx.xx.xxxx',
         lehrende: 'xx.xx.xxxx',
         lehrgang: {
-          id: "xxx",
+          id: "1",
           name: "xxx",
-          beruf: "xxx",
-          Einsatzstellen: [{
-            id: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          einsatzstellen: [{
+            id: "1",
             langBezeichnung: "xxx",
             kurzBezeichnung: "xxx",
             stellenBeschreibung: "xxx",
             bemerkung: "xxx",
-            beruf: "xxx",
+            beruf: {
+              id: "1",
+              berufKurz: "INF",
+              berufLang: "Informatiker"
+            },
             lehrjahr: "xxx",
-            Ausbildner: {
-              id: "xxx",
-              vorname: "xxx",
-              nachname: "xxx",
-              geburtstag: "xxx"
+            ausbildner: {
+              id: "1",
+              vorname: "Tobias",
+              nachname: "Peter",
+              geburtstag: "25.06.1959"
             }
           },
           {
-            id: "xxx",
+            id: "2",
             langBezeichnung: "xxx",
             kurzBezeichnung: "xxx",
             stellenBeschreibung: "xxx",
             bemerkung: "xxx",
-            beruf: "xxx",
+            beruf: {
+              id: "1",
+              berufKurz: "INF",
+              berufLang: "Informatiker"
+            },
             lehrjahr: "xxx",
-            Ausbildner: {
-              id: "xxx",
-              vorname: "xxx",
-              nachname: "xxx",
-              geburtstag: "xxx"
+            ausbildner: {
+              id: "1",
+              vorname: "Tobias",
+              nachname: "Peter",
+              geburtstag: "25.06.1959"
             }
           }]
         }
+      }
+    ],
+    ausbildner: [
+      {
+        id: "1",
+        vorname: "Tobias",
+        nachname: "Peter",
+        geburtstag: "25.06.1959"
       }
     ],
     berufe: [
@@ -109,6 +143,95 @@ class App extends Component {
         id: "2",
         berufKurz: "KV",
         berufLang: "Kaufmann"
+      }
+    ],
+    einsatzstellen: [
+        {
+          id: "1",
+          langBezeichnung: "xxx",
+          kurzBezeichnung: "xxx",
+          stellenBeschreibung: "xxx",
+          bemerkung: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          lehrjahr: "xxx",
+          ausbildner: {
+            id: "1",
+            vorname: "Tobias",
+            nachname: "Peter",
+            geburtstag: "25.06.1959"
+          }
+        },
+        {
+          id: "2",
+          langBezeichnung: "xxx",
+          kurzBezeichnung: "xxx",
+          stellenBeschreibung: "xxx",
+          bemerkung: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          lehrjahr: "xxx",
+          ausbildner: {
+            id: "1",
+            vorname: "Tobias",
+            nachname: "Peter",
+            geburtstag: "25.06.1959"
+          }
+        }
+    ],
+    lehrgange: [
+      {
+        id: "1",
+        name: "xxx",
+        beruf: {
+          id: "1",
+          berufKurz: "INF",
+          berufLang: "Informatiker"
+        },
+        einsatzstellen: [{
+          id: "xxx",
+          langBezeichnung: "xxx",
+          kurzBezeichnung: "xxx",
+          stellenBeschreibung: "xxx",
+          bemerkung: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          lehrjahr: "xxx",
+          ausbildner: {
+            id: "1",
+            vorname: "Tobias",
+            nachname: "Peter",
+            geburtstag: "25.06.1959"
+          }
+        },
+        {
+          id: "xxx",
+          langBezeichnung: "xxx",
+          kurzBezeichnung: "xxx",
+          stellenBeschreibung: "xxx",
+          bemerkung: "xxx",
+          beruf: {
+            id: "1",
+            berufKurz: "INF",
+            berufLang: "Informatiker"
+          },
+          lehrjahr: "xxx",
+          ausbildner: {
+            id: "1",
+            vorname: "Tobias",
+            nachname: "Peter",
+            geburtstag: "25.06.1959"
+          }
+        }]
       }
     ]
   }
@@ -168,6 +291,16 @@ class App extends Component {
         <Route exact path="/berufe" render={props => (
           <React.Fragment>
             <Berufe createBeruf={this.createBeruf} deleteBeruf={this.deleteBeruf} changeBeruf={this.changeBeruf} berufe={this.state.berufe} />
+          </React.Fragment>
+        )} />
+        <Route exact path="/einsatzstellen" render={props => (
+          <React.Fragment>
+            <Einsatzstellen createEinsatzstelle={this.createEinsatzstelle} deleteEinsatzstelle={this.deleteEinsatzstelle} changeEinsatzstelle={this.changeEinsatzstelle} einsatzstellen={this.state.einsatzstellen} />
+          </React.Fragment>
+        )} />
+        <Route exact path="/lehrgang" render={props => (
+          <React.Fragment>
+            <Lehrgange createLehrgang={this.createLehrgang} deleteLehrgang={this.deleteLehrgang} changeLehrgang={this.changeLehrgang} lehrgange={this.state.lehrgange} />
           </React.Fragment>
         )} />
         <Footer />

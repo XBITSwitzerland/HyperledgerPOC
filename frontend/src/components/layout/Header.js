@@ -39,6 +39,12 @@ export default class Header extends PureComponent {
                 <NavItem>
                   <NavLink href="/berufe">Berufe</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink href="/einsatzstellen">Einsatzstellen</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/lehrgang">Lehrgang</NavLink>
+                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>

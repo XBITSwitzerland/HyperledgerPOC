@@ -1,13 +1,12 @@
 import React, { PureComponent } from 'react'
-import BerufElement from './BerufElement';
+import EinsatzstelleElement from './EinsatzstelleElement';
 
-export default class BerufeElemente extends PureComponent {
+export default class EinsatzstelleElemente extends PureComponent {
 
   render() {
-    var berufe = this.props.berufe;
-    
-    return berufe.map((beruf) => (
-        <BerufElement changeSelection={this.props.changeSelection} key={beruf.id} beruf={beruf} />
+    var einsatzstellen = this.props.einsatzstellen;
+    return einsatzstellen.map((einsatzstelle) => (
+        <EinsatzstelleElement changeSelection={this.props.changeSelection} key={einsatzstelle.id} einsatzstelle={einsatzstelle} />
     ))
   }
 }

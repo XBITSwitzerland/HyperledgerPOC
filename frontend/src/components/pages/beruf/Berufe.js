@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import SelectedBeruf from './pageComponents/SelectedBeruf';
 import BerufeListe from './pageComponents/BerufeListe';
 
-export default class Lernende extends PureComponent {
+export default class Berufe extends PureComponent {
   state = {
     selectedBeruf: '',
     createBerufBool: false
@@ -18,6 +18,7 @@ export default class Lernende extends PureComponent {
   }
 
   render() {
+    console.log("Berufe: " + JSON.stringify(this.props.berufe));
     if(this.state.selectedBeruf !== '' || this.state.createBerufBool === true) {
       return (
         <div>
