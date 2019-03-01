@@ -45,6 +45,9 @@ export default class Header extends PureComponent {
                 <NavItem>
                   <NavLink href="/lehrgang">Lehrgang</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink href="/login">Login</NavLink>
+                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>

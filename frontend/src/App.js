@@ -11,6 +11,7 @@ import Lernende from './components/pages/lernende/Lernende';
 import Berufe from './components/pages/beruf/Berufe';
 import Einsatzstellen from './components/pages/einsatzstelle/Einsatzstellen';
 import Lehrgange from './components/pages/lehrgange/Lehrgange';
+import Login from './components/login/Login';
 
 class App extends Component {
   state = {
@@ -303,6 +304,7 @@ class App extends Component {
             <Lehrgange createLehrgang={this.createLehrgang} deleteLehrgang={this.deleteLehrgang} changeLehrgang={this.changeLehrgang} lehrgange={this.state.lehrgange} />
           </React.Fragment>
         )} />
+        <Route path="/login" exact component={Login} />
         <Footer />
       </div>
       </Router>
